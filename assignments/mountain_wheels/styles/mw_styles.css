@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*
+   
+   Bike the Mountains Tour Style Sheet
+   Author: Rick Smith
+   Date: 02/10/2024   
+   
+   Filename: mw_styles.css
+
+*/
+
+
+/* Structural Styles */
+
+html {
+    background-color: rgb(173, 189, 227);
+}
+
+body {
+    background-color: rgb(208, 184, 109);
+    font-family: 'Century Gothic', sans-serif;
+}
+
+footer {
+    background-color: rgb(208, 184, 109);
+    padding: 5px 0;
+}
+
+address {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Heading Styles */
+
+h1, h2 {
+    font-weight: normal;
+}
+
+/* Navigation Styles */
+
+nav > ul {
+    list-style: none;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+
+nav a {
+    color: rgb(43, 59, 125);
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    color: rgb(212, 35, 35);
+}
+
+/* Article Styles */
+
+article#tour_summary h1  {
+    font-size: 2.2em;
+    letter-spacing: 0.2em;
+}
+
+article#tour_summary p {
+    font-size: 1.1em;
+}
+
+article#tour_summary > p:first-of-type::first-line {
+    font-size: 1.2em;
+    font-variant-caps: small-caps;
+
+}
+
+/* Aside Styles */
+
+aside#tour_itinerary h1 {
+    font-size: 1.2em;
+}
+
+aside#tour_itinerary h2 {
+    font-size: 0.9em;
+}
+
+aside#tour_itinerary h2:nth-of-type(odd),
+aside#tour_itinerary p:nth-of-type(odd){
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary h2:nth-of-type(even),
+aside#tour_itinerary p:nth-of-type(even){
+    color: rgb(81, 95, 175);
+}
+
+aside#tour_itinerary p {
+    font-size: 0.8em;
+}
+
+/* Blockquote Styles */
+
+blockquote {
+    background-color: rgb(173, 189, 227);
+    color: rgba(255, 255, 255, 0.65);
+    
+}
+
+
+blockquote p {
+    padding: 2.5px 10px;
+}
