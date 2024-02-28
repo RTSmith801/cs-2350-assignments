@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*
+
+   Tables Style Sheet
+   Author: Rick Smith  
+   Date: 02/27/2024   
+
+   Filename:         dlr_tables2.css
+
+*/
+
+/* Table Styles */
+
+table {
+    width: 100%;
+    border: 15px outset rgb(151, 151, 151);
+    border-collapse: collapse;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+tr{
+    height: 25px;
+}
+
+th, td {
+    border: 1px solid grey;
+    vertical-align: text-top;
+    padding: 5px;
+}
+
+/* Table Caption Styles */
+
+caption {
+    caption-side: bottom;
+}
+
+/* Table Column Styles */
+
+col.timeColumn {
+    width: 10%;
+    background-color: rgb(215, 205, 151);
+}
+
+col.wDayColumns {
+    width: 11%;
+    background-color: rgb(236, 255, 211);
+}
+
+col.wEndColumns {
+    width: 17%;
+    background-color: rgb(255, 231, 255);
+}
+
+
+/* Table Header Styles */
+
+thead {
+    color: white;
+    background-color: rgb(105, 177, 60);
+}
+
+thead th:first-of-type {
+    background-color: rgb(153, 86, 7);
+}
+
+thead th:nth-of-type(7), th:nth-of-type(8) {
+    background-color: rgb(153, 0, 153);
+}
+
+
+/* Table Footer Styles */
+
+tfoot {
+    color: white;
+    background-color: black;
+}
+
+
+
+
