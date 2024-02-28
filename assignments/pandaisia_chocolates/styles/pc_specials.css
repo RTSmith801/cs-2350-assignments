@@ -70,7 +70,7 @@ div.col-3-4 {width: 75%;}
 
 /* Specials Styles */
 
-div#specials {
+div.specials {
     min-height: 400px;
     border: 1px dashed rgb(71, 52, 29);
 }
