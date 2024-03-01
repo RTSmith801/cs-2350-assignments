@@ -20,10 +20,10 @@
     p {
         column-count: 3;
         column-gap: 20px;
-        border-left: 1px solid black;
-		border-right: 1px solid black;		
+        column-rule: 1px solid black;
+        -moz-column-count: 3;
+        -webkit-column-count: 3		
     }
 }
-
 
 

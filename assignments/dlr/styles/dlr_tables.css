@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/*
+
+   Tables Style Sheet
+   Author: Rick Smith  
+   Date: 03/01/2024   
+
+   Filename:         dlr_tables.css
+
+*/
+
+/* Table Styles */
+
+table.schedule {
+    background: white;
+    border: 10px outset rgb(153, 0, 153);
+    font-size: .75em;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.schedule th, table.schedule td{
+    border: 1px solid grey;
+}
+
+/* Table Caption Styles */
+
+table.schedule caption {
+    caption-side: bottom;
+    text-align: right;
+}
+
+/* Row Group Styles */
+
+table.schedule thead {
+    background: rgb(153, 0, 153);
+    color: white;
+}
+
+table.schedule tfoot {
+    background: black;
+    color: white;
+}
+
+/* Col Group Styles */
+
+#firstCol {
+    background-color: rgb(218, 210, 218);
+}
+
+#dayCols {
+    background-color: rgb(255, 220, 255);
+}
+
