@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/*
+   Tables Style Sheet
+   Author: Rick Smith  
+   Date: 03/01/2024   
+   Filename: dlr_tables.css
+
+*/
+
+/* Page Styles */
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+main h1{
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.activity_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activity {
+    margin: 10px;
+    flex: 45%;
+    box-sizing: border-box;
+}
+
+dd {
+    margin: 0;
+}
+
+
+/* Table Styles */
+
+th, td {
+    vertical-align: text-top;
+    padding: 5px;
+}
+
+table.schedule {
+    background: white;
+    border: 2px solid #F0C505;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .8em;
+}
+
+table.schedule th, table.schedule td{
+    border: 1px solid grey;
+}
+
+/* Table Caption Styles */
+
+table.schedule caption#topCaption {
+    padding: 0px 0px 20px 0px;
+    caption-side: top;
+    text-align: center;
+}
+
+/* Row Group Styles */
+
+table.schedule thead {
+    background: black;
+    color: white;
+}
+
+table.schedule tfoot {
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+/* Col Group Styles */
+
+table.schedule #firstCol {
+    background-color: #061A40;
+}
+
+table.schedule #dayCols {
+    background-color: #0353A4;
+    color: black;
+}
+
+table.schedule #resting {
+    background-color: #50758D;
+}
+
+table.schedule #weekendCols {
+    background-color: #006daa;
+}
+
+
