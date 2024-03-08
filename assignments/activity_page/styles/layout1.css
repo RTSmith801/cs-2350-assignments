@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/* Importing Font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+.cinzel-<uniquifier> {
+  font-family: "Cinzel", serif;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/*
+   styles for story_layout1.html
+   Filename: layout1.css
+
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+    background-color: #0070BB;
+    background-image: url('../images/be_here_now2.png'); /* Adjust the path and image name accordingly */
+    background-repeat: space; /* This will tile the image both horizontally and vertically */
+    background-size: auto; /* Maintain the original size of the image */
+}
+
+/* Page Body Styles */
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    max-width: 960px;
+    min-width: 640px;
+    background-color: #DDD8C4;
+    font-family: Verdana, Geneva, Arial, sans-serif; 
+    box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
+}
+
+/* Page Header Styles */
+
+body > header {
+    background-color: #765F57;
+}
+body > header > img {
+   display: block;
+   width: 100%;
+}
+
+body > header > nav.horizontalNavigation li {
+   width: 50%;
+}
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontalNavigation > ul > li {
+    display: block;
+    float: left;
+    font-size: .75em;
+    font-family: Cinzelf;
+    
+}
+
+nav.horizontalNavigation a {
+   background-color: black;
+   display: block;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: rgb(201, 201, 201);
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: #082D0F;
+} 
+
+/* Heading Styles */
+
+h1, h2, h3 {
+    text-indent: 1em;
+    font-family: Cinzelf;
+}
+
+h1 {
+   font-size: 2.4em;
+   line-height: 2.4em;
+   font-family: Cinzel;
+   letter-spacing: 0.3em;
+   text-align: center;
+   font-weight: bold;
+   color: black;
+}
+
+h2, h3 {
+   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+   padding: 0.5em 0;
+}
+
+h2 {
+   font-size: 1.3em;
+   background-color: #C0B0AA;
+   color: black;
+}
+
+
+h3 {
+   font-size: 1.1em;
+}
+
+
+/* Paragraph Styles */
+
+p {
+   margin: 1em;
+   font-size: 0.9em;
+}
+
+/* Left Column Styles */
+
+img {
+   width: 100%;
+   display: block;
+}
+
+img#columnPic{
+   
+   display: block;
+   padding: 1em 1em 0 1em; 
+}
+
+
+/* Right Column Styles */
+
+aside {
+    background-color: #98BD98;
+    margin-left: 1em;
+    padding-bottom: 1em;
+}
+
+
+aside > h2 {
+   text-align: center;
+   background-color: rgb(31, 31, 31);
+   color: rgb(201, 201, 201);
+}
+
+dl {
+    font-size: 0.9em;
+    padding-bottom: 2em;
+}
+
+dl > dt {
+    color: black;
+    margin: 1em;
+    font-family: Cinzelf;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+dl > dt > q {
+    font-style: italic;
+    font-weight: normal;
+}
+
+dl > dd {
+   margin: 0 1em 0 1em;
+   
+}
+
+/* Footer Styles */
+
+footer {
+   color: #DDD8C4;
+   background-color: #765F57;
+   font-size: 0.9em;
+   padding: 1em 0;
+   text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #DDD8C4;
+}

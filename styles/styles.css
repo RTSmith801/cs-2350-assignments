@@ -12,6 +12,7 @@ body {
     background: radial-gradient(circle, #687067, #2E2F2E);
     font-family: 'Alatsi', serif, sans-serif;
     font-size: 20px;
+    box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
 }
 
 header {

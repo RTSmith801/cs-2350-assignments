@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*
+   
+   Style Sheet for Grids used in the story layout websites
+   Author: Rick Smith
+   Date: 03/07/2024   
+   Filename: grids.css
+
+*/
+
+
+/* Grid Rows Styles */
+
+div.row {
+    clear: both;
+}
+
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Grid Columns Styles */
+
+div[class^="col-"] {
+    float: left;
+}
+
+div.col-1-1 {width: 100%;}
+div.col-1-2 {width: 50%;}
+div.col-1-3 {width: 33.33%;}
+div.col-1-4 {width: 25%;}
+div.col-2-3 {width: 66.67%;}
+div.col-3-4 {width: 75%;}
