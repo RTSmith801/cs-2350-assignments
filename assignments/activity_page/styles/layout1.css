@@ -3,9 +3,9 @@
 /* Importing Font */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
-.cinzel-<uniquifier> {
+.cinzel {
   font-family: "Cinzel", serif;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -20,9 +20,9 @@
 
 html {
     background-color: #0070BB;
-    background-image: url('../images/be_here_now2.png'); /* Adjust the path and image name accordingly */
-    background-repeat: space; /* This will tile the image both horizontally and vertically */
-    background-size: auto; /* Maintain the original size of the image */
+    background-image: url('../images/be_here_now2.png'); 
+    background-repeat: space;
+    background-size: auto;
 }
 
 /* Page Body Styles */
@@ -57,7 +57,7 @@ nav.horizontalNavigation > ul > li {
     display: block;
     float: left;
     font-size: .75em;
-    font-family: Cinzelf;
+    font-family: 'Cinzel';
     
 }
 
@@ -83,13 +83,13 @@ nav.horizontalNavigation a:active {
 
 h1, h2, h3 {
     text-indent: 1em;
-    font-family: Cinzelf;
+    font-family: 'Cinzel';
 }
 
 h1 {
    font-size: 2.4em;
    line-height: 2.4em;
-   font-family: Cinzel;
+   font-family: 'Cinzel';
    letter-spacing: 0.3em;
    text-align: center;
    font-weight: bold;
@@ -138,7 +138,7 @@ img#columnPic{
 
 aside {
     background-color: #98BD98;
-    margin-left: 1em;
+    
     padding-bottom: 1em;
 }
 
@@ -157,7 +157,7 @@ dl {
 dl > dt {
     color: black;
     margin: 1em;
-    font-family: Cinzelf;
+    font-family: 'Cinzel';
     font-size: 1.2em;
     font-weight: bold;
 }

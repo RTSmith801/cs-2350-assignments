@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/* Importing Font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+.caveat {
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    background-color: #2E0927;
+    background-image: url('../images/abstract-background.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1600px;
+    min-width: 640px;
+    background-color: #382537;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}
+
+body > header {
+    background-color: #563D7C;
+}
+
+body > header > nav.horizontalNavigation li {
+   width: 50%;
+}
+
+nav.horizontalNavigation > ul > li {
+    display: block;
+    float: left;
+    font-size: 1em;
+    font-family: 'Caveat', sans-serif;
+}
+
+nav.horizontalNavigation a {
+   background-color: #3E1F5C;
+   display: block;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: #D4A5A5;
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: #733D7B;
+} 
+
+h1 {
+    font-size: 3em;
+    line-height: 1.5em;
+    font-family: 'Caveat', serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-weight: bold;
+    color: #D4A5A5;
+    }
+
+h2, h3 {
+    font-family: 'Caveat';
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    background-color: #7B4B94;
+    color: #E7D4D4;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #E7D4D4;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+p {
+   margin: 1em;
+   font-size: 1em;
+   color: #E7D4D4;
+}
+
+img {
+    width: 100%;
+}
+
+.col-1-2 img, .col-2-2 img {
+    width: 100%;
+}
+
+aside {
+    background-color: #5D5A6D;
+    padding-bottom: 1em;
+    position: relative;
+}
+
+article {
+    background-color: #5D5A6D;
+    position: relative;
+    height: 1304px;
+    overflow: auto;
+}
+
+
+aside > h2 {
+   text-align: center;
+   background-color: #2B2955;
+   color: #E7D4D4;
+}
+
+dl {
+    font-size: 1em;
+    padding-bottom: 2em;
+}
+
+dl > dt {
+    color: #D4A5A5;
+    margin: 1em;
+    font-family: 'Caveat', serif;
+    font-size: 1.23em;
+    font-weight: bold;
+}
+
+dl > dt > q {
+    font-weight: normal;
+}
+
+dl > dd {
+   margin: 0 1em 0 1em;
+   color: #E7D4D4;
+}
+
+footer {
+   color: #E7D4D4;
+   background-color: #2B2955;
+   font-size: 1em;
+   padding: 1em 0;
+   text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #D4A5A5;
+}
+
+/* scrollbar styles */
+::-webkit-scrollbar {
+  width: 20px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3E1F5C;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #5D5A6D; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #733D7B; 
+}

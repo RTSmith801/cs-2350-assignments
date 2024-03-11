@@ -94,7 +94,7 @@ table.schedule #dayCols {
     color: black;
 }
 
-table.schedule #resting {
+.resting {
     background-color: #50758D;
 }
 
