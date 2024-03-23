@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*
+   
+   Assignments Website Layout Styles
+   Filename: layout.css
+
+*/
+
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+main h1{
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.activity_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activity {
+    margin: 10px;
+    flex: 45%;
+    box-sizing: border-box;
+}
+
+dd {
+    margin: 0;
+}
+
+
+
