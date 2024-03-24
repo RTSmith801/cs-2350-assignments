@@ -73,7 +73,7 @@ a:link,
 a:visited {
     color: #FDFFFC;
     text-decoration: none;
-    
+    transition: 0.3s ease;
 }
 
 a:active, 
@@ -99,8 +99,30 @@ main h1 {
     padding: 20px;
     border-radius: 5px;
     background-color: #6b677d;
+    transition: 0.3s ease;
+    -webkit-filter: grayscale(0.5);
+    filter: grayscale(0.5);
+}
+
+.activity:nth-of-type(odd){
+    transform: perspective(1000px) rotateY(10deg);
     box-shadow: -2.5px 2.5px 5px black;
-    
+}
+.activity:nth-of-type(even){
+    transform: perspective(1000px) rotateY(-10deg);
+    box-shadow: 2.5px 2.5px 5px black;
+}
+.activity:nth-last-of-type(odd):last-of-type {
+    transform: perspective(1000px) rotateX(5deg);
+    box-shadow: 0px 2.5px 5px black;
+}
+
+.activity:hover, .activity:nth-last-of-type(odd):last-of-type:hover{
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: 0.3s ease;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    box-shadow: 0px 2.5px 5px black;
 }
 
 .activity img{
@@ -111,13 +133,10 @@ main h1 {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    transition: transform 0.3s ease;
-    box-shadow: -2.5px 2.5px 5px black;
 }
 
 .activity img:hover{
-    transform: scale(1.025);
-    box-shadow: -2.5px 2.5px 15px black;
+    
 }
 
 .activity dt {
