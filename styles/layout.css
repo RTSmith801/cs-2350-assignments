@@ -31,7 +31,7 @@ ul {
 }
 
 .activity {
-    margin: 20px;
+    margin: 25px 10px;
     flex: 45%;
     box-sizing: border-box;
 }
