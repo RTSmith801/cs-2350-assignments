@@ -5,6 +5,12 @@
 
 html {
     background-color: #7D7467;
+    background-image: url(/images/crumpled_paper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset rgb(51, 51, 51) 50px 0px 100px 5px, inset rgb(51, 51, 51) -50px 0px 100px 5px;
     color: #FDFFFC;
 }
 
@@ -12,7 +18,7 @@ body {
     background: radial-gradient(circle, #687067, #2E2F2E);
     font-family: 'Alatsi', serif, sans-serif;
     font-size: 20px;
-    box-shadow: rgb(51, 51, 51) 10px 0px 40px,  rgb(51, 51, 51) -10px 0px 40px;
+    box-shadow: rgb(51, 51, 51) 100px 0px 300px 5px, rgb(51, 51, 51) -100px 0px 300px 5px;
 }
 
 header {
@@ -28,8 +34,8 @@ header .background img {
 }
 
 header .overlay img {
-    width: auto; 
-    height: 100px; 
+    width: auto;
+    height: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -40,7 +46,7 @@ nav {
     background-image: linear-gradient(to right, #23022E, #6b677d, #6b677d, #6b677d, #6b677d, #23022E);
     text-align: center;
     font-size: 0.8em;
-    
+
 }
 
 nav > ul {
@@ -49,34 +55,34 @@ nav > ul {
     list-style-position: outside;
 }
 
-nav li{
-    padding: 20px 50px;    
+nav li {
+    padding: 20px 50px;
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 40px;
 }
 
-nav li:first-of-type{
+nav li:first-of-type {
     background-image: url(../icons/gears.png);
-    
+
 }
 
-nav li:nth-of-type(2){
+nav li:nth-of-type(2) {
     background-image: url(../icons/wrench.png);
 }
 
-nav li:last-of-type{
+nav li:last-of-type {
     background-image: url(../icons/build.png);
 }
 
-a:link, 
+a:link,
 a:visited {
     color: #FDFFFC;
     text-decoration: none;
     transition: 0.3s ease;
 }
 
-a:active, 
+a:active,
 a:hover {
     color: #F0C505;
     text-decoration: underline;
@@ -102,7 +108,7 @@ main h1 {
     opacity: .25;
 }
 
-.activity{
+.activity {
     padding: 20px;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -110,19 +116,20 @@ main h1 {
     filter: grayscale(0.5);
 }
 
-.activity:nth-of-type(odd){
+.activity:nth-of-type(odd) {
     background-image: linear-gradient(to right, #6b677d, #23022E);
     transform: perspective(1000px) rotateY(10deg);
     box-shadow: -2.5px 2.5px 5px black;
 }
-.activity:nth-of-type(even){
+
+.activity:nth-of-type(even) {
     background-image: linear-gradient(to left, #6b677d, #23022E);
     transform: perspective(1000px) rotateY(-10deg);
     box-shadow: 2.5px 2.5px 5px black;
 }
 
 
-.activity:hover{
+.activity:hover {
     transform: rotateX(0deg) rotateY(0deg);
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
@@ -130,7 +137,7 @@ main h1 {
     background-image: linear-gradient(to right, #23022E, #6b677d, #6b677d, #6b677d, #6b677d, #23022E);
 }
 
-.activity img{
+.activity img {
     border-width: 2px;
     border-color: #F0C505;
     border-style: solid;
@@ -151,7 +158,7 @@ main h1 {
 .activity dd:first-of-type {
     text-align: justify;
     font-weight: lighter;
-    
+
 }
 
 .activity dd:first-of-type::before {
