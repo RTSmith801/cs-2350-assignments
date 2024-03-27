@@ -5,27 +5,26 @@
 
 html {
     background-color: #7D7467;
-    background-image: url(/images/crumpled_paper.jpg);
+    background-image: url(/images/background3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    box-shadow: inset rgb(51, 51, 51) 50px 0px 100px 5px, inset rgb(51, 51, 51) -50px 0px 100px 5px;
     color: #FDFFFC;
 }
 
 body {
-    background: radial-gradient(circle, #687067, #2E2F2E);
+    background-image: linear-gradient(to right, #0c0d1d, #1e2148, #242756, #242756, #1e2148, #0c0d1d );
     font-family: 'Alatsi', serif, sans-serif;
     font-size: 20px;
-    box-shadow: rgb(51, 51, 51) 100px 0px 300px 5px, rgb(51, 51, 51) -100px 0px 300px 5px;
+    box-shadow: rgb(0, 0, 0) 50px 0px 100px 5px, rgb(0, 0, 0) -50px 0px 100px 5px;
 }
 
 header {
     position: relative;
     height: 125px;
     overflow: hidden;
-    border-bottom: 2px solid #F0C505;
+    border-bottom: 3px solid #F0C505;
 }
 
 header .background img {
@@ -119,13 +118,13 @@ main h1 {
 .activity:nth-of-type(odd) {
     background-image: linear-gradient(to right, #6b677d, #23022E);
     transform: perspective(1000px) rotateY(10deg);
-    box-shadow: -2.5px 2.5px 5px black;
+    box-shadow: -5.5px 5.5px 25px black;
 }
 
 .activity:nth-of-type(even) {
     background-image: linear-gradient(to left, #6b677d, #23022E);
     transform: perspective(1000px) rotateY(-10deg);
-    box-shadow: 2.5px 2.5px 5px black;
+    box-shadow: 5.5px 5.5px 25px black;
 }
 
 
@@ -133,12 +132,12 @@ main h1 {
     transform: rotateX(0deg) rotateY(0deg);
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
-    box-shadow: 0px 2.5px 5px black;
+    box-shadow: 0px 5px 10px black;
     background-image: linear-gradient(to right, #23022E, #6b677d, #6b677d, #6b677d, #6b677d, #23022E);
 }
 
 .activity img {
-    border-width: 2px;
+    border-width: 3px;
     border-color: #F0C505;
     border-style: solid;
     border-radius: 5px;
@@ -181,7 +180,7 @@ main h1 {
 footer {
     padding: 20px;
     text-align: center;
-    border-top: 2px solid #F0C505;
+    border-top: 3px solid #F0C505;
     background-image: url(../images/background1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
