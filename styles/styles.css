@@ -4,7 +4,7 @@
 
 
 html {
-    background-color: #7D7467;
+    background-color: linear-gradient(to right, #0c0d1d, #1e2148, #242756, #242756, #1e2148, #0c0d1d );;
     background-image: url(/images/background3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,7 +104,7 @@ main h1 {
 /* Activity Styles */
 
 .empty {
-    opacity: .25;
+    opacity: .15;
 }
 
 .activity {
