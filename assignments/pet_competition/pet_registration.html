@@ -16,6 +16,7 @@
     <link href="styles/pet_reset.css" rel="stylesheet">
     <link href="styles/pet_forms.css" rel="stylesheet">
     <link href="styles/pet_styles.css" rel="stylesheet">
+    <script src="scripts/pet_formsubmit.js"></script>
 </head>
 
 <body>
@@ -35,16 +36,18 @@
 
             <fieldset id="petInfo">
                 <legend>Pet Information</legend>
-                <div>
+                <div class="formRow">
                     <label for="petNameBox">Pet Name</label>
                     <input id="petNameBox" name="petName" placeholder="Enter pet's name">
                 </div>
-                <div>
+                <div class="formRow">
                     <label for="petBirthdateBox">Pet Birthday</label>
                     <input id="petBirthdateBox" name="petBirthdate" type="date">
                 </div>
-                <div>
-                    <label>Pet Type</label><br>
+                <div class="formRow">
+                    <label>Pet Type</label>
+                </div>
+                <div class="formRow">
                     <input name="petType" id="cat" value="cat" type="radio">
                     <label for="cat">Cat</label><br>
                     <input name="petType" id="dog" value="dog" type="radio">
@@ -61,41 +64,30 @@
                     <textarea id="petBioBox" name="petBio"></textarea>
                 </div>
             </fieldset>
-
-            <!-- Pet Owner Info -->
-
-            <fieldset id="ownerInfo">
-                <legend>Owner Information</legend>
-                <div>
-                    <label for="ownerNameBox">Owner Name*</label>
-                    <input id="ownerNameBox" name="ownerName" placeholder="Enter owner's name" required>
-                </div>
-                <div>
-                    <label for="ownerPhoneBox">Phone Number*</label>
-                    <input id="ownerPhoneBox" name="ownerPhone" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\s*)?\d{3}[\s-]?\d{4}$">
-                </div>
-                <div>
-                    <label for="ownerEmailBox">E-mail*</label>
-                    <input name="ownerEmail" id="ownerEmailBox" type="email" required>
-                </div>
-            </fieldset>
-
+            
             <!-- Competition Entry -->
 
             <fieldset id="competitionInfo">
                 <legend>Competition Information</legend>
                 <div>
                     <p>Which competition(s) are you registering for?</p>
-                    <input type="checkbox" id="singingCompetition" name="singingCompetition" value="singing">
-                    <label for="singingCompetition">Singing pet competition</label>
-                    <input type="checkbox" id="cutestCompetition" name="cutestCompetition" value="cutest">
-                    <label for="cutestCompetition">Cutest pet competition</label>
-                    <input type="checkbox" id="tricksCompetition" name="tricksCompetition" value="tricks">
-                    <label for="tricksCompetition">Pet tricks competition</label>
+                    <div class="formRow">
+                        <input type="checkbox" id="singingCompetition" name="singingCompetition" value="singing">
+                        <label for="singingCompetition">Singing pet competition</label>
+                    </div>
+                    <div class="formRow">
+                        <input type="checkbox" id="cutestCompetition" name="cutestCompetition" value="cutest">
+                        <label for="cutestCompetition">Cutest pet competition</label>
+                    </div>
+                    <div class="formRow">
+                        <input type="checkbox" id="tricksCompetition" name="tricksCompetition" value="tricks">
+                        <label for="tricksCompetition">Pet tricks competition</label>
+                    </div>
 
-                    <div id="tricksOptions">
+                    <div class="formRow" id="tricksOptions">
                         <label for="tricksType">Type of Trick:</label><br>
                         <select id="tricksType" name="tricksType">
+                            <option value="n/a" selected>N/A</option>
                             <option value="obstacleCourse">Obstacle Course</option>
                             <option value="frisbee">Frisbee/Ball/Other Catching</option>
                             <option value="rollOver">Roll Over/Play Dead</option>
@@ -105,26 +97,44 @@
                 </div>
             </fieldset>
 
+            <!-- Pet Owner Info -->
+
+            <fieldset id="ownerInfo">
+                <legend>Owner Information</legend>
+                <div class="formRow">
+                    <label for="ownerNameBox">Owner Name*</label>
+                    <input id="ownerNameBox" name="ownerName" placeholder="John Doe" required>
+                </div>
+                <div class="formRow">
+                    <label for="ownerPhoneBox">Phone Number*</label>
+                    <input id="ownerPhoneBox" name="ownerPhone" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\s*)?\d{3}[\s-]?\d{4}$">
+                </div>
+                <div class="formRow">
+                    <label for="ownerEmailBox">E-mail*</label>
+                    <input name="ownerEmail" id="ownerEmailBox" type="email" placeholder="example@gmail.com" required>
+                </div>
+            </fieldset>
+
             <!-- Boarding -->
 
             <fieldset id="boardingInfo">
                 <legend>Boarding Information</legend>
-                <div>
+                <div class="formRow">
                     <label for="daysBoarding">How many days of boarding?</label>
                     <input name="daysBoarding" id="daysBoarding" type="number" value="0" min="0" max="3" step="1">
                 </div>
-                <div>
+                <div class="formRow">
                     <label for="kennelSize">Required size of kennel?</label>
                     0"
                     <input name="kennelSize" id="kennelSize" type="range" min="0" max="48" step="8" value="24">
                     48"
                 </div>
             </fieldset>
-            
-            
+
+
             <!-- submit|reset buttons -->
-            
-            
+
+
             <div id="buttons">
                 <input value="Submit" type="submit">
                 <input value="Reset" type="reset">
