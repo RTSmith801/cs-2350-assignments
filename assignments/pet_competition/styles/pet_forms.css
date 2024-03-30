@@ -1,0 +1,108 @@
+/*
+
+   
+   Author: Rick Smith
+   Date: 03/29/2024   
+
+   Filename: pet_forms.css
+
+*/
+
+/* Form Layout Styles */
+
+form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+form > fieldset {
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+    background-color: rgb(241, 232, 181);
+    border-radius: 20px;
+    font-size: .85em;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.formRow {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding: 7px 0px;
+}
+
+div.formRow > * {
+    -webkit-flex: 1 1 150px;
+    flex: 1 1 150px;
+}
+
+/* Legend Styles */
+legend {
+    background-color: rgb(179, 20, 25);
+    color: white;
+    padding: 5px;
+}
+
+/* Text Area Styles */
+textarea {
+    margin: 10px;
+    height: 100px;
+    width: 95%;
+}
+
+/* Spinner Styles */
+/* See Tutorial 5 for details on using a flexible layout */
+
+div.formRow > input#dineSpin {
+    -webkit-flex: 0 0 50px;
+    flex: 0 0 50px;
+}
+
+/* Form Button Styles */
+div#buttons {
+    text-align: center;
+    width: 100%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
+
+/* Validation Styles */
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+    background: rgb(220, 255, 220) url(../images/rb_valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+    background: rgb(255, 232, 233) url(../images/rb_invalid.png) bottom right/contain no-repeat;
+}
+
+
+/*
+    
+    Add at least one fieldset with a legend
+    Add at least two related images (in addition to the background image for the header)
+    Add style to the web page by linking it to an external .css file.
+    Add color (text or background)
+    Style the form elements to create a general theme.
+    Include padding and margin sizes that produce comfortable spacing throughout the form.
+    Change the style on focus for the three required elements. Set the background to one color when the input is valid and another color when it is invalid.
+        pet owner name
+        pet owner phone number
+        pet owner email
+
+*/

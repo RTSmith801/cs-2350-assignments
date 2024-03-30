@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Pet competition Website
+    
+    Author: Rick Smith
+    Date: 03/29/2024  
+
+    Filename: pet_registration.html
+    -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <title>Pet Registration</title>
+    <link href="styles/pet_reset.css" rel="stylesheet">
+    <link href="styles/pet_forms.css" rel="stylesheet">
+    <link href="styles/pet_styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--
+        header section/ include text and a background image
+    -->
+        <h1>Welcome to Pet Registration</h1>
+    </header>
+    <nav>
+
+    </nav>
+    <section>
+        <form action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php" method="POST">
+
+            <!-- Pet Info -->
+
+            <fieldset id="petInfo">
+                <legend>Pet Information</legend>
+                <div>
+                    <label for="petNameBox">Pet Name</label>
+                    <input id="petNameBox" name="petName" placeholder="Enter pet's name">
+                </div>
+                <div>
+                    <label for="petBirthdateBox">Pet Birthday</label>
+                    <input id="petBirthdateBox" name="petBirthdate" type="date">
+                </div>
+                <div>
+                    <label>Pet Type</label><br>
+                    <input name="petType" id="cat" value="cat" type="radio">
+                    <label for="cat">Cat</label><br>
+                    <input name="petType" id="dog" value="dog" type="radio">
+                    <label for="dog">Dog</label><br>
+                    <input name="petType" id="reptile" value="reptile" type="radio">
+                    <label for="reptile">Reptile</label><br>
+                    <input name="petType" id="bird" value="bird" type="radio">
+                    <label for="bird">Bird</label><br>
+                    <input name="petType" id="rodent" value="rodent" type="radio">
+                    <label for="rodent">Rodent</label><br>
+                </div>
+                <div>
+                    <label for="petBioBox">Pet Bio</label>
+                    <textarea id="petBioBox" name="petBio"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Pet Owner Info -->
+
+            <fieldset id="ownerInfo">
+                <legend>Owner Information</legend>
+                <div>
+                    <label for="ownerNameBox">Owner Name*</label>
+                    <input id="ownerNameBox" name="ownerName" placeholder="Enter owner's name" required>
+                </div>
+                <div>
+                    <label for="ownerPhoneBox">Phone Number*</label>
+                    <input id="ownerPhoneBox" name="ownerPhone" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\s*)?\d{3}[\s-]?\d{4}$">
+                </div>
+                <div>
+                    <label for="ownerEmailBox">E-mail*</label>
+                    <input name="ownerEmail" id="ownerEmailBox" type="email" required>
+                </div>
+            </fieldset>
+
+            <!-- Competition Entry -->
+
+            <fieldset id="competitionInfo">
+                <legend>Competition Information</legend>
+                <div>
+                    <p>Which competition(s) are you registering for?</p>
+                    <input type="checkbox" id="singingCompetition" name="singingCompetition" value="singing">
+                    <label for="singingCompetition">Singing pet competition</label>
+                    <input type="checkbox" id="cutestCompetition" name="cutestCompetition" value="cutest">
+                    <label for="cutestCompetition">Cutest pet competition</label>
+                    <input type="checkbox" id="tricksCompetition" name="tricksCompetition" value="tricks">
+                    <label for="tricksCompetition">Pet tricks competition</label>
+
+                    <div id="tricksOptions">
+                        <label for="tricksType">Type of Trick:</label><br>
+                        <select id="tricksType" name="tricksType">
+                            <option value="obstacleCourse">Obstacle Course</option>
+                            <option value="frisbee">Frisbee/Ball/Other Catching</option>
+                            <option value="rollOver">Roll Over/Play Dead</option>
+                            <option value="other">Other</option>
+                        </select><br>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Boarding -->
+
+            <fieldset id="boardingInfo">
+                <legend>Boarding Information</legend>
+                <div>
+                    <label for="daysBoarding">How many days of boarding?</label>
+                    <input name="daysBoarding" id="daysBoarding" type="number" value="0" min="0" max="3" step="1">
+                </div>
+                <div>
+                    <label for="kennelSize">Required size of kennel?</label>
+                    0"
+                    <input name="kennelSize" id="kennelSize" type="range" min="0" max="48" step="8" value="24">
+                    48"
+                </div>
+            </fieldset>
+            
+            
+            <!-- submit|reset buttons -->
+            
+            
+            <div id="buttons">
+                <input value="Submit" type="submit">
+                <input value="Reset" type="reset">
+            </div>
+        </form>
+    </section>
+    <footer>
+        Copyright &#169; 2024, Rick Smith &ndash; CS 2350 Client Side Web Development, All Rights Reserved
+    </footer>
+</body>
+
+</html>

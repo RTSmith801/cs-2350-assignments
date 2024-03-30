@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*
+  
+    Author: Rick Smith
+    Date: 03/29/2024     
+    Filename: pet_styles.css
+
+*/
+
+
+/* HTML and Body styles */
+
+html {
+    background: rgb(246, 174, 176) url(../images/rb_background.png);
+    font-family: Verdana, Geneva, sans-serif;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    box-shadow: rgb(51, 51, 51) 20px 0px 40px, rgb(51, 51, 51) -20px 0px 40px,
+        inset rgb(51, 21, 21) 0px 0px 40px;
+    border-left: 3px solid rgb(51, 51, 51);
+    border-right: 3px solid rgb(51, 51, 51);
+    min-height: 100%;
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 1020px;
+    width: 100%;
+}
+
+
+/* Header styles */
+
+header {
+    background: linear-gradient(to bottom, black 70%, rgb(179, 20, 25));
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    line-height: 1.4em;
+    padding: 15px 0px;
+}
+
+section {
+    margin: 30px 3%;
+}
+
+
+section p {
+    line-height: 1.4em;
+    margin: 15px 0px;
+}
+
+/* Footer styles */
+
+footer {
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(179, 20, 25), black);
+    padding: 20px 40px;
+}
