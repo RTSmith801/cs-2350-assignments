@@ -16,7 +16,9 @@
     <link href="styles/pet_reset.css" rel="stylesheet">
     <link href="styles/pet_forms.css" rel="stylesheet">
     <link href="styles/pet_styles.css" rel="stylesheet">
+    <!--
     <script src="scripts/pet_formsubmit.js"></script>
+    -->
 </head>
 
 <body>
@@ -107,7 +109,7 @@
                 </div>
                 <div class="formRow">
                     <label for="ownerPhoneBox">Phone Number*</label>
-                    <input id="ownerPhoneBox" name="ownerPhone" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\s*)?\d{3}[\s-]?\d{4}$">
+                    <input id="ownerPhoneBox" name="ownerPhone" type="tel" placeholder="nnn-nnn-nnnn" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
                 <div class="formRow">
                     <label for="ownerEmailBox">E-mail*</label>
