@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*
+   
+   Filename: bc_outline.css
+   
+   Outline Styles for the US Constituion page
+
+*/
+
+
+#outline {
+   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+   padding: 10px 5px;
+   font-size: 0.9em;
+   margin-left: 20px;
+}
+                          
+#outline h1 {
+   font-size: 1.8em; 
+   text-align: center; 
+   letter-spacing: 2px; 
+   font-weight: bold;
+   letter-spacing: 0.5em;
+   margin-bottom: 20px;
+}
+
+#outline span {
+   background-color: white;
+   border: 1px solid black; 
+   cursor: pointer;
+   display: inline-block;
+   font-family: 'Courier New', courier, monospace;
+   font-size: 1.2em; 
+   height: 1.2em;
+   line-height: 1.2em;
+   margin-right: 4px; 
+   padding: 0px; 
+   text-align: center; 
+   width: 1.2em;
+   background-color: rgb(218, 204, 194);
+}
+                            
+#outline a {
+   color: black;
+   text-decoration: underline;
+}
+
+#outline li {
+   list-style-type: none; 
+   text-transform: uppercase; 
+}
+                          
+                          
+#outline ol {
+   margin-left: 0px; 
+   padding-left: 0px;
+}
+
+#outline ol li {
+   margin-top: 5px;
+}
+
+#outline ol ol {
+   margin-left: 20px;
+}
+
+#outline ol ol li {
+   margin-top: 5px;
+}
+
+#outline ol ol ol {
+   margin-left: 25px;
+}
+
+#outline ol ol ol li {
+   margin-top: 5px;
+}
+
+
+

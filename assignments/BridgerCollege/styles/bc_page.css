@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*
+   Filename: bc_print.css
+
+   This file contains styles used in the bc_const.html file to displaying
+   only the contents of historic document suitable for printing
+
+*/
+
+
+/* Styles to be used for print displays */
+
+html {
+   background: transparent;
+   height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   width: 100%;
+   max-width: 100%;
+   min-width: 100%;
+   margin: 0px auto;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;  
+   color: rgb(51, 51, 51);
+   background-color: transparent;
+   box-shadow: none; 
+}
+
+/* Hide page elements that will not be printed */
+
+header, nav, footer, aside {
+   display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+   width: 100%;
+}
+
+
+/* Styles for the style sheet switcher */
+
+#styleOptions {
+   margin-top: 10px;
+}
+
+#styleOptions button {
+   font-family: 'Times Roman', Times, serif;
+   font-size: 16px;
+   border: 1px solid rgb(191, 191, 191);
+   font-style: italic;
+   background-color: white;
+   margin: 5px 10px 0px 0px;
+   cursor: pointer;
+   padding: 5px;
+}
+#styleOptions button:hover {
+   background-color: rgb(231, 231, 231);
+}
