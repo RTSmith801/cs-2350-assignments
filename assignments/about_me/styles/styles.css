@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*
+   
+    Author: Rick Smith
+    Filename: styles.css
+
+*/
+
+html {
+    background-color: #7D7467;
+    background-image: url(../images/background.png);
+    color: #FDFFFC;
+}
+
+body {
+    margin: 0 auto;
+    padding: 2em;
+    width: 100%;
+    max-width: 1020px;
+    min-width: 640px;
+    background-color: rgba(31, 3, 34, .9);
+    font-size: 20px;
+    box-shadow: rgb(100, 100, 100) 50px 0px 100px 5px, rgb(100, 100, 100) -50px 0px 100px 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+#imgContainer {
+    float: right;
+    width: 450px;
+    height: 400px;
+}
+
+img {
+    float: right;
+    border-radius: 30px;
+    border: solid black 3px;
+}
+
+#favoritesList {
+    padding: 2em;
+    background: rgba(44, 66, 81, .75);
+    border-radius: 30px;
+    border: solid black 3px;
+}
+
+#favoritesList ul {
+    padding-left: 2em;
+}
+
+li {
+    line-height: 2rem;
+}
+
+table,
+th,
+td {
+    border: solid black 3px;
+    border-collapse: collapse;
+    padding: .5rem;
+    background: rgba(44, 66, 81, .75);
+}
+
+th {
+    font-size: 1.5rem;
+    text-align: left;
+    background: rgb(14, 42, 61);
+}
+
+#navButton {
+    padding: .5em 2em;
+}
+
+#navButton input {
+    padding: .25em 1em;
+    font-size: 1rem;
+    font-family: "Arial, sans-serif";
+}
