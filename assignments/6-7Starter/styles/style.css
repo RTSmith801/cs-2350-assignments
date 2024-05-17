@@ -1,0 +1,121 @@
+/*
+Analogic Color Scheme
+Base	Greyed	Bold	Light	Lightest
+9EA2BE	7D7F8F	333C7C	C2C6DF	CACCDF
+A89BBD	827B8D	4D337B	CBC1DE	D0C8DE
+91A8B2	738086	2F5E74	BBCFD9	C3D2D9
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #9EA2BE;
+    padding: 0px;
+}
+
+body {
+    background-color: #CACCDF;
+    width: 880px;
+    margin: 0px auto;
+    padding: 24px 60px;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    margin-top: 64px;
+}
+
+fieldset {
+    border: 2px solid #4D337B;
+    margin: 20px 0 64px 40px;
+    padding: 32px 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4D337B;
+    padding: 0 6px;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4D337B;
+    text-align: right;
+    width: 160px;
+}
+
+fieldset label {
+    width: 112px;
+}
+
+label.radio,
+label.checkbox {
+    text-align: left;
+    width: auto;
+}
+
+input[type="text"],
+select,
+input[type="date"],
+input[type="email"] {
+    height: 40px;
+    border: 3px #A89BBD solid;
+    font-size: 16px;
+    text-align: left;
+    padding: 4px 12px;
+    margin-left: 20px;
+}
+
+input:focus,
+select:focus {
+    outline: 3px #A89BBD solid;
+}
+
+input.quantity {
+    width: 58px;
+}
+
+input.cost {
+    width: 120px;
+    text-align: right;
+}
+
+input[type="submit"] {
+    background-color: #D0C8DE;
+    border: 3px #4D337B solid;
+    color: #4D337B;
+    font-weight: bold;
+    padding: 4px 12px;
+    margin-left: 190px;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px;
+}
+
+input[type="file"] {
+    color: #4D337B;
+    font-weight: bold;
+    outline: none;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+input[type="radio"] {
+    margin-left: 40px;
+}
+
+
+/* Hide divs until associated checkbox is checked */
+
+#singAdd,
+#cuteAdd,
+#trickAdd {
+    display: none;
+}

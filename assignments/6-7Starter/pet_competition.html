@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--
+    
+    Pet Competition Page
+    Author: Rick Smith
+    Date: 05/11/2024  
+
+    Filename: pet_competition.html
+    -->
+    <meta charset="UTF-8" />
+    <title>Application Form</title>
+    <meta name="description" content="Learning Form Elements" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="scripts/pet_competition.js" async></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">National Pet Competition</h1>
+        <h2 class="heading">Registration Form</h2>
+    </header>
+
+    <form action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php" method="post">
+
+        <section>
+            <h2>Pet Competitor:</h2>
+            <p><label for="name">Enter Name of Pet</label>
+                <input type="text" name="name" id="name" />
+            </p>
+            <p><label for="birth">Birth Date</label>
+                <input type="date" name="birth" id="birth" />
+            </p>
+        </section>
+
+        <section class="checkbox">
+            <h2>Which Competitions?</h2>
+            <p>Select the competitions you want to participate in. You may select any number.</p>
+            <p>The registration fee is $120.00 per competition.</p>
+
+            <p><input type="checkbox" id="sing" name="sing">
+                <label for="sing" class="checkbox">Singing Pets</label>
+            </p>
+
+            <div id="singAdd">
+                <fieldset>
+                    <legend>Provide details for the singing pet competition</legend>
+                    <p><label for="singTitle">Title</label>
+                        <input type="text" name="singTitle" id="singTitle" />
+                    </p>
+                    <p><label for="demo">Singing Demo</label>
+                        <input type="file" id="demo" name="demo">
+                    </p>
+                </fieldset>
+            </div>
+
+            <p><input type="checkbox" id="cute" name="cute">
+                <label for="cute" class="checkbox">Cutest Pet Competition</label>
+            </p>
+
+            <div id="cuteAdd">
+                <fieldset>
+                    <legend>Provide details for the cutest pet competition</legend>
+                    <p><label for="cuteTitle">Title</label>
+                        <input type="text" name="cuteTitle" id="cuteTitle" />
+                    </p>
+                    <p><label for="album">Photo Album</label>
+                        <input type="file" id="album" name="album">
+                    </p>
+                </fieldset>
+            </div>
+
+            <p><input type="checkbox" id="trick" name="trick">
+                <label for="trick" class="checkbox">Pet Tricks Competition</label>
+            </p>
+
+
+            <div id="trickAdd">
+                <fieldset>
+                    <legend>Provide details for the pet trick competition</legend>
+                    <p><label for="trickTitle">Title</label>
+                        <input type="text" name="trickTitle" id="trickTitle" />
+                    </p>
+                    <p>
+                        <label for="trickType">Trick Type</label>
+                        <select name="trickType" id="trickType">
+                            <option value="1">Obstacle Course</option>
+                            <option value="2">Frisbee/Ball/Other Catching</option>
+                            <option value="3">Roll Over/Play Dead</option>
+                            <option value="3">Other</option>
+                        </select>
+                    </p>
+                </fieldset>
+            </div>
+
+        </section>
+
+
+        <section>
+            <h2>Pet Type?</h2>
+            <p><input type="radio" name="type" id="cat" value="cat" />
+                <label for="cat" class="radio">Cat</label>
+            </p>
+
+            <p><input type="radio" name="type" id="dog" value="dog" />
+                <label for="dog" class="radio">Dog</label>
+            </p>
+
+            <p><input type="radio" name="type" id="reptile" value="reptile" />
+                <label for="reptile" class="radio">Reptile</label>
+            </p>
+
+            <p><input type="radio" name="type" id="bird" value="bird" />
+                <label for="bird" class="radio">Bird</label>
+            </p>
+
+            <p><input type="radio" name="type" id="rodent" value="rodent" />
+                <label for="rodent" class="radio">Rodent</label>
+            </p>
+        </section>
+
+        <section>
+            <h2>Contact Info</h2>
+            <p>Enter the email of the person to contact.</p>
+            <p><label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+            </p>
+        </section>
+
+        <section>
+            <h2>Boarding Arrangements</h2>
+            <p>Provide the following information so boarding arrangements can be made. The cost for boarding is 19.99 per day. The size of kennel will be computed based on weight of pet.</p>
+
+            <p><label for="weight">Weight of pet?</label>
+                <input type="text" name="weight" id="weight" class="quantity" />
+                <label for="size">Kennel size</label>
+                <input type="text" name="size" id="size" class="cost" readonly>
+            </p>
+            <p><label for="days">Days of boarding?</label>
+                <input type="text" name="days" id="days" class="quantity" />
+                <label for="boardingFee">Cost</label>
+                <input type="text" name="boardingFee" id="boardingFee" class="cost" readonly />
+            </p>
+        </section>
+
+        <section class="total">
+            <h2>Total Costs</h2>
+            <p><label for="boardingCost">Boarding</label>
+                <input type="text" name="boardingCost" id="boardingCost" class="cost" readonly />
+            </p>
+            <p><label for="registrationCost">Registration</label>
+                <input type="text" name="registrationCost" id="registrationCost" class="cost" readonly />
+            </p>
+            <p><label for="totalCost">Total</label>
+                <input type="text" name="totalCost" id="totalCost" class="cost" readonly />
+            </p>
+        </section>
+
+        <section>
+            <h2>Submit the Registration</h2>
+            <p><input type="submit" id="submit" value="Submit Registration" name="submit" /></p>
+        </section>
+
+    </form>
+</body>
+
+</html>
