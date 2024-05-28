@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #E2F2FC;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+#game {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #827EFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 4px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Increase the size of the card on hover */
+}
+
+.flipped {
+    background-color: #FEA64C !important;
+}
+
+#counter {
+    background-color: #FECE04;
+    padding: 10px;
+    margin: 0 auto 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
